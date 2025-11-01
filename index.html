@@ -4,8 +4,342 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment on HTML and CSS</title>
+
+    <!-- font awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS style -->
+    <style>
+        body{
+            margin: 0px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+
+        }
+        .hero{
+            background-color: #F3FCF7;
+           
+        }
+
+        .header{
+            display: flex;
+            justify-content:space-around;
+        }
+
+        .nav-bar ul li{
+            display:inline;
+        }
+
+        .nav-bar ul li a{
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+        }
+
+        .hero-content{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .hero-btn{
+            background-color: #06C167;
+            padding: 20px;
+            color: #fff;
+            width: 140px;
+            size: 16px; 
+       }
+
+       .hero-btn a{
+        text-decoration: none;
+        color: #fff;
+        margin-left: 15px;
+
+       }
+
+       /* .woman-img{
+        background-image: url(images/Ratings.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 999;
+        
+
+       } */
+
+       .servicesCard-1{
+          display: flex;
+       }
+
+       .servicesCard-2{
+          display: flex;
+       }
+
+       .servicesCard-3{
+        display: flex;
+       }
+
+       .servicesCard-4{
+        display:flex;
+       }
+
+       .service-cards{
+        display: flex;
+        justify-content:space-evenly;
+        margin-top: 30px;
+        border-top: 1px solid silver;
+        border-bottom: 1px solid silver;
+       }
+
+       .healthy-food{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        
+       }
+
+       .viggie-food{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+       }
+
+       .viggie-cards{
+        display: flex;
+        justify-content: space-evenly   ;
+       }
+
+       .discover-btn{
+        background-color: #E6F9F0;
+        padding: 15px;
+        width: 150px;
+        color: #06C167;
+        margin-left: 20px;
+       }
+
+       .discover-btn a{
+        text-decoration: none;
+        color: #06C167;
+       } 
+
+       .variety-foods-text{
+        background-color: #F3FCF7;
+        border: 1px solid #06C167;
+        width: 250px;
+       }
+
+       .varietyFoods-img{
+          display: flex;
+          justify-content:center;
+          gap: 10px;
+       
+       }
+       
+
+
+
+
+
+
+
+    </style>
 </head>
 <body>
+    <section class="hero">
+        <!-- header -->
+        <header class="header">
+            <div class="foodies">
+                <h2 style="color: #06C167;">Foodies</h2>
+            </div>
+
+            <nav class="nav-bar">
+                <ul>
+                    <li> <a href="#" style="color: #06C167;">Home</a> </li>
+                    <li> <a href="#">About Us</a> </li>
+                    <li> <a href="#">Service Us</a> </li>
+                    <li> <a href="#">Our Company</a> </li>
+                    <li> <a href="#">Pages</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <section class="hero-content" style="position: relative; z-index: 1;">
+
+            <!-- hero texts -->
+            <div class="hero-text">
+                <h1>We're Serious For Food.</h1>
+                <p>We strive to provide a space where guests can connect with <br> themselves  and explore their full potential, offering a safe place.</p>
+
+                <!-- green button -->
+                <div class="hero-btn">
+                    <a href="#" class="">Get Started</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <!-- hero images -->
+             <div class="woman-img">
+                <img src="images/Place Your Image.png" alt="a Woman" width="450px">
+             </div>
+
+        </section>
+
+    </section>
+
+    <section class="service-cards">
+        <div class="servicesCard-1">
+            <img src="images/Icon.png" alt="">
+            <div>
+                <h3>Free Shipping</h3>
+                <p>Orders over $140</p>
+            </div>
+        </div>
+        <div class="servicesCard-2">
+            <img src="images/Icon (1).png" alt="">
+            <div>
+                <h3>Quick Payment</h3>
+                <p>100% secure payment</p>
+            </div>
+
+        </div>
+        <div class="servicesCard-3">
+            <img src="images/Icon (1).png" alt="">
+            <div>
+                <h3>Special Promo</h3>
+                <p>Get special promo</p>
+            </div>
+
+        </div>
+        <div class="servicesCard-4">
+            <img src="images/Icon (1).png" alt="">
+            <div>
+                <h3>24/7 Support</h3>
+                <p>Ready support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- healthy foods -->
+     <section class="healthy-food">
+        <div class="healthy-food-img">
+            <img src="images/Place Your Image (2).png" alt="Healthy Food">
+        </div>
+
+        <div style="margin-top: 50px;">
+            <p>Our Benefit</p>
+            <h1>The More Healthy Food The Better</h1>
+            <ul type="square" style="margin-top: 50px;">
+                <li>Be Alive With Veggie Food.</li>
+                <li>It's The Place To Be.</li>
+                <li>Nonstop Veggie Food</li>
+                <li>The Best Silk Dish In Town</li>
+                <li>Truffles, Egg & Pumpkin Spice</li>
+            </ul>
+        </div>
+
+     </section>
+
+     <!--Viggie Food  -->
+     <section class="viggie-food" >
+        <div class="viggie-food-content">
+            <p>Our Stars</p>
+            <h1>Veggie Food Goes On And Always On</h1>
+            <div class="viggie-cards">
+                <div>
+                    <h2 style="color: #06C167;">1,500</h2>
+                    <p>Sold Product</p>
+                </div>
+
+                <div>
+                    <h2 style="color: #06C167;">500</h2>
+                    <p>Possitive Feedback</p>
+                </div>
+
+                <div>
+                    <h2 style="color: #06C167;">400</h2>
+                    <p>Official Store</p>
+
+                </div>
+
+            </div>
+
+            <div class="hero-btn" style="width: 200px;">
+                    <a href="#" class="">Get Special Promo</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+            </div>
+      </div>
+
+      <div class="viggie-food-img">
+            <img src="images/Place Your Image (3).png" alt="">
+
+      </div>
+
+    </section>
+
+    <!-- Variety Foods -->
+     <section class="varietyFoods">
+        <p style="text-align: center;">Our Features</p>
+        <h1 style="text-align: center;">Variety Of Foods</h1>
+        <div class="varietyFoods-img">
+                <div>
+                    <img src="images/Place Your Image (4).png" alt="" width="250px">
+                </div>
+                <div class="variety-foods-text">
+                    <h3 style="margin-left: 10px;">Veggies Are Forever</h3>
+                    <p style="margin-top: 50px; margin-left: 10px;">We offer the following services</p>
+                    <div class="discover-btn" style="margin-top: 40px; margin-left: 10px;">
+                        <a href="#">Discover Now</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </div>
+                </div>
+                <div>
+                    <img src="images/Place Your Image (5).png" alt="" width="250px">
+                </div>
+                <div class="variety-foods-text">
+                    <h3 style="margin-left: 10px;"> Good For Your Skin</h3>
+                    <p style="margin-top: 50px; margin-left: 10px;">We offer the following services </p>
+                    <div class="discover-btn" style="margin-top: 40px; margin-left: 10px;">
+                        <a href="#">Discover Now</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </div>
+                </div>
+
+            
+        </div>
+
+        <!--  -->
+        <div class="varietyFoods-img">
+                <div>
+                    <img src="images/Place Your Image (6).png" alt="" width="250px">
+                </div>
+                <div class="variety-foods-text">
+                    <h3 style="margin-left: 10px;">Veggies Are Forever</h3>
+                    <p style="margin-top: 50px; margin-left: 10px;">We offer the following services</p>
+                    <div class="discover-btn" style="margin-top: 40px; margin-left: 10px;">
+                        <a href="#">Discover Now</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </div>
+                </div>
+                <div>
+                    <img src="images/Place Your Image (7).png" alt="" width="250px">
+                </div>
+                <div class="variety-foods-text">
+                    <h3 style="margin-left: 10px;"> Good For Your Skin</h3>
+                    <p style="margin-top: 50px; margin-left: 10px;">We offer the following services </p>
+                    <div class="discover-btn" style="margin-top: 40px; margin-left: 10px;">
+                        <a href="#">Discover Now</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </div>
+                </div>
+
+            
+        </div>
+     </section>
     
+
+
+
 </body>
 </html>
